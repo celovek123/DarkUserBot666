@@ -1,0 +1,121 @@
+{
+  "name": "Dark-Userbot",
+  "description": "Ən güvənilən userbot",
+  "logo": "https://telegra.ph/file/f2de605e72efdb6e282d4.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "telegram-userbot",
+    "səmərəlilik"
+  ],
+  "repository": "https://github.com/DarkUserBot-Team/DarkRoot",
+  "website": "https://github.com/DarkUserBot-Team/DarkRoot",
+  "success_url": "https://github.com/DarkUserBot-Team/DarkRoot",
+  "env": {
+    "ENV": {
+      "description": "Buna HƏR ŞEY olaraq təyin etmək heroku-ya imkan veriləcək",
+      "value": "ANYTHING"
+    },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Endirilən faylların hara gedəcəyi.",
+      "value": "./userbot/DOWNLOADS/",
+      "required": false
+    },
+    "ALIVE_NAME": {
+      "description": "İstifadəçi adını buraya daxil edin",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Bu dəyəri my.telegram.org saytından əldə edin!",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Bu dəyəri my.telegram.org saytından əldə edin!",
+      "value": ""
+    },
+    "PLUGIN_CHANNEL": {
+      "description": "Plugin saxladığınız kanal",
+      "value": ""
+    },
+    "SUDO_USERS": {
+      "description": "Sudoya nəzarət etmək üçün istifadə etmək istədiyiniz istifadəçi nömrəsini daxil edin. ",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "Giriş xüsusiyyətini istədiyiniz bir qrup kimliyi",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "Repl.run'dan alın və ya yerli olaraq çalıştırın",
+      "value": ""
+    },
+    "GITHUB_ACCESS_TOKEN": {
+      "description": "GitHub Commit Plugin üçün Github Access Token. Yoxdusa boş saxlayın.",
+      "value": "",
+      "required": false
+    },
+    "GIT_REPO_NAME": {
+      "description": "Repo adınız Nümunə: DarkUserBot-Team/DarkRoot, lakin əvvəl GITHUB_ACCESS_TOKEN qurulmalıdır.Yoxdursa boş saxlayın",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Lydia APİ lazımdır.Yoxdursa boş saxlayın",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Https://dashboard.heroku.com/account ünvanına gedin, aşağıya fırladın və Reveal API düyməsini basın.Kopyaladığınızı buraya yapışdırın",
+      "value": ""
+    },
+    "HEROKU_APP_NAME": {
+      "description": "TƏn yuxarda app nameni burayada yazın.",
+      "value": ""
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "@botfather gedin və bot yaradın.Api tokeni buraya yapışdıırın",
+      "value": ""
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "Botunuzun adını buraya yazın",
+      "value": ""
+    },
+    "DOWNLOAD_PFP_URL_CLOCK": {
+      "description": "@vTelegraphBot buraya şəkil faylı atın sizə veriyi linki buraya yapışdırın",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": ".autopic üçün saat ayarı",
+      "value": "Asia/Baku",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+    },
+    {
+      "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+    }
+  ]
+}
