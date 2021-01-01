@@ -18,7 +18,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/DarkUserBot-Team/DarkRoot"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/sekret666/DarkUserBot666/"
 BOT_IS_UP_TO_DATE = "`UserBot Güncəldir.\nTəşəkkür Edirik.`"
 NEW_BOT_UP_DATE_FOUND = (
     "yeni güncəlləmə tapıldı: {branch_name}\n" "changelog: \n\n{changelog}\n" "güncəllənir ..."
