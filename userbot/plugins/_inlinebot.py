@@ -148,7 +148,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         await borg.send_message(event.query.user_id, text1)
         await borg(functions.contacts.BlockRequest(event.query.user_id))
 
-    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"nə danışmaq")))
+    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"terminator")))
     async def rip(event):
         chat_m = await event.get_chat()
         await event.edit("Seçim qəbul edildi ✔️")
